@@ -1,5 +1,5 @@
 {
-  "name": "@nightwatch/react",
+  "name": "nightwatch-react-fixes",
   "version": "3.1.2",
   "description": "Nightwatch plugin which adds support for React component testing using the Vite dev server. Requires Nightwatch 2.0+",
   "main": "index.js",
@@ -32,7 +32,7 @@
     "get-port": "^5.1.1",
     "jsdom": "^20.0.2",
     "rimraf": "^3.0.2",
-    "vite-plugin-nightwatch": "^0.4.6"
+    "vite-plugin-nightwatch-fixes": "^0.4.7"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.4",
