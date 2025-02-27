@@ -24,10 +24,10 @@ const startViteServer = async function (settings = {}) {
       const enabled = await makeViteRequest({vite_port, protocol});
 
       if (!enabled) {
-        const error = new Error('Missing vite-plugin-nightwatch');
+        const error = new Error('Missing vite-plugin-nightwatch-fixes');
         const code = `:
 
-    import nightwatchPlugin from 'vite-plugin-nightwatch'
+    import nightwatchPlugin from 'vite-plugin-nightwatch-fixes'
 
     export default {
       plugins: [
@@ -38,7 +38,7 @@ const startViteServer = async function (settings = {}) {
       ]
     };
     `;
-        error.help = ['Please ensure that "vite-plugin-nightwatch" is loaded in your Vite config file ' + code];
+        error.help = ['Please ensure that "vite-plugin-nightwatch-fixes" is loaded in your Vite config file ' + code];
         error.link = 'https://nightwatchjs.org/guide/component-testing/testing-react-components.html';
 
         throw error;

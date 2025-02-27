@@ -1,2 +1,2 @@
 // Workaround until plugins can include other plugins
-module.exports = require('vite-plugin-nightwatch/nightwatch/commands/launchComponentRenderer.js');
+module.exports = require('vite-plugin-nightwatch-fixes/nightwatch/commands/launchComponentRenderer.js');
